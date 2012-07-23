@@ -5,4 +5,4 @@ Finished blog posts in [published](https://github.com/ronanguilloux/writings/tre
 
 Drafts I'm currently working on in [alpha](https://github.com/ronanguilloux/writings/tree/master/draft)
 
-Licence : [CC by-sa](http://creativecommons.org/licenses/by-sa/3.0/)
+License : [CC by-sa](http://creativecommons.org/licenses/by-sa/3.0/)
