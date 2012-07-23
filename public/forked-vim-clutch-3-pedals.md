@@ -3,11 +3,11 @@
 The Forked Vim Clutch (3 pedals)
 ================================
 
-Mine is a forked version of the orignal [Vim Clutch by Aleksandr Levchuk](https://github.com/alevchuk/vim-clutch/blob/master/README.md) 
+Mine is a forked version of the original [Vim Clutch by Aleksandr Levchuk](https://github.com/alevchuk/vim-clutch/blob/master/README.md).
 
 The vim clutch drastically improve editing speed while using [vim](http://www.vim.org/about.php), the only-for-connoisseurs text editor.
 
-The vim clutch is a 3-foot-pedals hardware configured for [vim](http://www.vim.org/about.php). The one I use is [branded by PCSensor™](http://www.pcsensor.com/index.php?_a=viewProd&productId=55) with a CD-ROM inlcuding an executable software for MS-Windows.
+The vim clutch is a 3-foot-pedals hardware configured for [vim](http://www.vim.org/about.php). The one I use is [branded by PCSensor™](http://www.pcsensor.com/index.php?_a=viewProd&productId=55) with a CD-ROM inlcuding an executable software for MS-Windows. No need to hack the hardware, it's plug & play, even for your debian-based laptop.
 
 The 3-foot-pedal is programmable via a MS-Windows executable software that allows you to set the string or keyboard input for each of the 3 pedals. It records your choice inside the hardware, so once you've done it, no need to go back to MS-Windows again. This executable needs .NET Framework v4.0 to run.
 
