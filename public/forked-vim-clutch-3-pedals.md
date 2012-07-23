@@ -11,6 +11,10 @@ The vim clutch drastically improve editing speed while using [vim](http://www.vi
 
 The 3-foot-pedal is programmable via a MS-Windows executable software that allows you to set the string or keyboard input for each of the 3 pedals. It records your choice inside the hardware, so once you've done it, no need to go back to MS-Windows again. This executable needs .NET Framework v4.0 to run.
 
+<img src="https://github.com/ronanguilloux/writings/public/raw/master/cim-clutch-1.jpg" />
+
+<img src="https://github.com/ronanguilloux/writings/public/raw/master/cim-clutch-2.jpg" />
+
 My configuration is:
 
 * left pedal: *ESC*
