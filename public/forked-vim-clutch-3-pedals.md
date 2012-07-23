@@ -13,7 +13,7 @@ The 3-foot-pedal is programmable via a MS-Windows executable software that allow
 
 <img src="https://github.com/ronanguilloux/writings/raw/master/public/vim-clutch-1.jpg" />
 
-<img src="https://github.com/ronanguilloux/writings/raw/master/public/cim-clutch-2.jpg" />
+<img src="https://github.com/ronanguilloux/writings/raw/master/public/vim-clutch-2.jpg" />
 
 My configuration is:
 
