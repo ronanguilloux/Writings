@@ -5,4 +5,4 @@ Finished blog posts in [published](https://github.com/kjbekkelund/ronanguilloux/
 
 Drafts I'm currently working on in [alpha](https://github.com/ronanguilloux/writings/tree/master/draft)
 
-Licence : [Gnu Free Documentation Licence](http://www.gnu.org/licenses/fdl-1.3.txt)
+Licence : [CC by-sa](http://creativecommons.org/licenses/by-sa/3.0/)
