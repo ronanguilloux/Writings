@@ -48,7 +48,7 @@ create a patch
 
 OR alternatively, for quick check, avoid EOL differences adding -w option : 
 
-    diff -wurN --binary old new > patched/YEAR-Month-Day.patch)
+    diff -wurN --binary old new > patched/YEAR-Month-Day.patch
 
 check patch 
 
