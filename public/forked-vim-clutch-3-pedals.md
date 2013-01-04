@@ -7,11 +7,14 @@ Mine is a forked version of the original [Vim Clutch by Aleksandr Levchuk](https
 
 The vim clutch drastically improve editing speed while using [vim](http://www.vim.org/about.php), the only-for-connoisseurs text editor.
 
-The vim clutch is a 3-foot-pedals hardware configured for [vim](http://www.vim.org/about.php). The one I use is [branded by PCSensor™](http://www.pcsensor.com/index.php?_a=viewProd&productId=55) with a CD-ROM including an executable software for MS-Windows. No need to hack the hardware, it's plug & play, even for your debian-based laptop.
+The vim clutch is a 3-foot-pedals hardware that I configured for [vim](http://www.vim.org/about.php). The one I use is [branded by PCSensor™](http://www.pcsensor.com/index.php?_a=viewProd&productId=55) with a CD-ROM including an executable software for MS-Windows. No need to hack the hardware, it's plug & play, even for your debian-based laptop.
 
 <img src="https://github.com/ronanguilloux/writings/raw/master/public/vim-clutch-0.jpg" />
 
-The 3-foot-pedal is programmable via a MS-Windows executable software that allows you to set the string or keyboard input for each of the 3 pedals. It records your choice inside the hardware, so once you've done it, no need to go back to MS-Windows again. This executable needs .NET Framework v4.0 to run.
+The 3-foot-pedal is programmable via a MS-Windows executable software that allows you to set the string or keyboard input for each of the 3 pedals. It records your choice inside the hardware, so once you've done it, no need to go back to MS-Windows again. This executable needs .NET Framework v4.0 to run. This has to be done just once.
+
+Just ask a friend to lend you a PC with a recent MS Windows, just for 5 minutes. Then plug the clutch USB, run the CD-ROM & configure your pedals.
+Here you are, you don't need MS Windows anymore: your clutch hardware just saved your configuration.
 
 <img src="https://github.com/ronanguilloux/writings/raw/master/public/vim-clutch-1.jpg" />
 
