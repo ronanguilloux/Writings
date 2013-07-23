@@ -109,14 +109,29 @@ $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 Les outils installés:
 
 ```
-    brew install ack
-    brew install the_silver_searcher
+    brew install the_silver_searcher wget tree tig
 ```
+
 `the_silver_searcher`se veut encore mieux que ack, je ne l'ai découvert qu'après coup, [il est documenté ici](https://github.com/ggreer/the_silver_searcher), "a code-searching tool similar to ack, but faster".
 
-Je n'ai pas installé git via brew (version 1.8.3) puisque la 1.8.1 a été installé avec l'appli mac de Github (cf. plus haut).
+Je n'ai pas installé git via brew (version 1.8.3) puisque la 1.8.1 a été installé avec l'appli mac de Github (cf. plus haut)
 
-5 - OpenSource fonts
--------------------------
+L'autocomplétion de `brew` dans `zsh`est vraiment utile, [l'installation](https://github.com/mxcl/homebrew/wiki/Tips-N%27-Tricks#zsh) est documentée ici 
+
+
+5 - Vagrant
+-----------
+
+On rentre dans le sérieux :  installer quelque chose de mieux que MAMP, et même mieux qu'un simple LAMP local, et trouver à la place un moyen de monter simplement et rapidement des machines virtuelles ayant une configuration exactement similaire aux différents environnements de production "réels".
+
+C'est ce que fait [Vagrant](http://www.vagrantup.com/) et c'est simplement bluffant.
+On trouvera [une liste de boxes pour vagrant ici](http://www.vagrantbox.es/) : ArchLinux, Debian, Ubuntu de toutes versions, et même Windows Server.
+
+En trois lignes de shell c'est monté, et c'est très très bon.
+
+X - Annexes
+-----------
+
+**OpenSource fonts**
 
 J'ai échoué pour l'instant à installer Powerline (peut importe en fait) par contre ça m'a fait découvrir [Powerline-Fonts](https://github.com/Lokaltog/powerline-fonts), un symathique dépot de fonts libres adaptées à l'édition de code.
