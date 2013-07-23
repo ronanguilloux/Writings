@@ -41,19 +41,19 @@ Préambule 2 : Les bases les plus basiques
 
 *où l'auteur se dit que bon, c'est pas tout ça, maintenant 'faut bosser avec le Mac*
 
-Une fois ma liste initiale d'applications indispensables établie (chrome - vim - SublimeText3, etc.), je me lance dans l'installation, en commençant par parcourir les sites web des éditeurs. Je me retrouve avec mes premiers .dmg dans mon répertoire "Téléchargements", sans trop savoir qu'en faire. Double-cliquer ? Grand débutant sous Mac, j'ai trouvé toutes les réponses à mes questions essentielles sur le site [DebuterSurMac.com](http://www.debutersurmac.com/tutoriels/accueil.html) : Qu'est-ce qu'un .dmg, comment installer ce qu'on y trouve vers "Mes applications", etc. Ce site est simple, les articles essentiels sont vite lus, on s'en sort vite et bien.
+Une fois ma liste initiale d'applications indispensables établie (chrome - vim - SublimeText3, etc.), je me lance dans l'installation, en commençant par parcourir les sites web des éditeurs de ces différents logiciels, souvent déjà utilisés sous Ubuntu. Je me retrouve avec mes premiers .dmg dans mon répertoire "Téléchargements", sans trop savoir qu'en faire. Double-cliquer ? Jeune débutant sous Mac, j'ai trouvé toutes les réponses à mes questions essentielles sur le site [DebuterSurMac.com](http://www.debutersurmac.com/tutoriels/accueil.html) : Qu'est-ce qu'un .dmg, comment installer ce qu'on y trouve vers "Mes applications", etc. Ce site est simple, les articles essentiels sont vite lus, on s'en sort vite et bien.
 
 
 1 - Les applications de base
 ----------------------------
 
-Les **.dmg** téléchargés sur les sites des différents éditeurs de logiciels (se reporter au préambule 2) aterrissent dans le dossier Téléchargements et s'ouvrent au clic dans une nouvelle fenêtre du Finder pour afficher le contenu de cet archive, proposant même quelquefois visuellement de glisser-déposer soi-même le binaire dans le répertoire Applications. Cette démarche vaut pour 90% des cas, il sinon il faut la faire à la main si nécessaire. Le "disque" .dmg peut ensuite être éjecté.
+Les **.dmg** téléchargés sur les sites des différents éditeurs de logiciels (se reporter au préambule 2) aterrissent donc dans le dossier Téléchargements et s'ouvrent au clic dans une nouvelle fenêtre du Finder pour afficher le contenu de cette archive, proposant même quelquefois visuellement de glisser-déposer soi-même le binaire dans le répertoire Applications. Cette démarche vaut pour 90% des cas, et sinon il faut la faire à la main si nécessaire. Le "disque" .dmg peut ensuite être éjecté. L'application est installée, pour de bon.
 
 **Les .dmg téléchargées et installées alla mano**
 
 * Google-Chrome
 * Google Drive (proposée sur drive.google.com)
-* iTerm2 "test" version (très bon émulateur de terminal)
+* [iTerm2](http://www.iterm2.com) version "test" (très bon émulateur de terminal)
 * Transmission (client Bittorrent)
 * VLC
 * SublimeText3
@@ -84,7 +84,9 @@ Je cite http://pym.me/posts/installer-et-configurer-un-environnement-de-developp
 >This package enables UNIX-style development via Terminal by installing command line developer tools, as well as Mac OS X SDK frameworks and headers. Many useful tools are included, such as the Apple LLVM compiler, linker, and Make. If you use Xcode, these tools are also embedded within the Xcode IDE, and can be installed on your system using the Downloads preferences pane within Xcode 4.5.
 À noter que pour peu que vous ayez déjà développé sur Mac, il y a de grandes chances pour que vous ayez déjà installé la suite.
 
-On verra plus loin qu'en sautant cette étape on se retrouve avec des warnings dans les installations avec `brew` (cf. le point 4), donc autant ne pas sauter cette étape.
+J'ai donc suivi les consignes : Installer Xcode (via l'Appstore, près d'un Giga o_O), aller dans Préférences > Téléchargements, installer les Command Line Tools (118,5 Mo).
+
+On verra plus loin qu'en sautant cette étape on se retrouve avec des warnings dans les installations avec `brew` (cf. le point 4), donc autant ne pas faire l'impasse.
 
 3 - ZSH
 -------
@@ -110,4 +112,4 @@ Les outils installés:
     brew install ack
 
 ```
-
+Je n'ai pas installé git via brew (version 1.8.3) puisque la 1.8.1 a été installé avec l'appli mac de Github (cf. plus haut).
