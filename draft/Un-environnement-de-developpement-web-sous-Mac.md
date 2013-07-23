@@ -88,7 +88,7 @@ On verra plus loin qu'en sautant cette étape on se retrouve avec des warnings d
 
 3 - ZSH
 -------
-Zsh, c'est le shell des gens qui utilisent tout le temps leur shell, et il est installé par défaut dans Mac. ON le tweak ici avec l'excellent `oh-my-zsh`, longtemps utilisé sous Ubuntu:
+Zsh, c'est le shell des gens qui utilisent tout le temps leur shell. Il est installé par défaut dans Mac. On le tweak ici avec l'excellent [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), que j'ai longtemps utilisé sous Ubuntu:
 ```
 $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 ```
