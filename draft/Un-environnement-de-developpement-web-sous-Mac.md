@@ -44,10 +44,67 @@ Préambule 2 : Les bases les plus basiques
 Une fois ma liste initiale d'applications indispensables établie (chrome - vim - sublimeText3), je me lance dans l'installation. Grand débutant sous Mac, j'ai trouvé toutes les réponses à mes questions essentielles sur le site [DebuterSurMac.com](http://www.debutersurmac.com/tutoriels/accueil.html) : Qu'est-ce qu'un .dmg, comment installer ce qu'on y trouve vers "Mes applications", etc. Ce site est simple les articles essentiels sont vite lus, on s'en sort vite et bien.
 
 
-Les applications de base
-------------------------
+1 - Les applications de base
+----------------------------
 
-**Chrome**  
-Safari est un navigateur web sous Mac qui sert à télécharger Chrome.  
-Au téléchargement, Chrome propose un .dmg (se reporter au préambule 1) qui s'ouvre dans une fenêtre, proposant visuellement de glisser-déposer soi-même le binaire dans le répertoire Applications. Jusque là, ça va.
+Les **.dmg** téléchargés sur les sites des différents éditeurs de logiciels (se reporter au préambule 1) aterrissent dans le dossier Téléchargements et s'ouvrent dans une fenêtre du navigateur de fichier, proposant même quelquefois visuellement de glisser-déposer soi-même le binaire dans le répertoire Applications. Cette démarche vaut pour 90% des cas, la faire à la main si nécessaire. Le "disque" .dmg peut ensuite être éjecté.
+
+* Google-Chrome
+* Google Drive (proposée sur drive.google.com)
+* iTerm2 "test" version (très bon émulateur de terminal)
+* Transmission (client Bittorrent)
+* VLC
+* SublimeText3
+* Github (proposée sur mac.github.com)
+* Virtualbox
+* Vagrant
+* Spotify
+
+
+**Les applications installées via AppStore**
+
+* QuickHub (OS X dedicated Github tool)
+* The Unarchiver
+* TweetDeck
+* Wunderlist
+* Evernote
+
+
+2 - Command Line Tools for Xcode
+--------------------------------
+
+Je cite http://pym.me/posts/installer-et-configurer-un-environnement-de-developpement-ruby-sur-mac-os-x :
+
+>L'étape indispensable (et susceptible de prendre un peu de temps) est l'installation des Command Line Tools for Xcode. C'est un gros package contenant l'ensemble des outils qui vont nous être utiles pour la suite.
+
+>This package enables UNIX-style development via Terminal by installing command line developer tools, as well as Mac OS X SDK frameworks and headers. Many useful tools are included, such as the Apple LLVM compiler, linker, and Make. If you use Xcode, these tools are also embedded within the Xcode IDE, and can be installed on your system using the Downloads preferences pane within Xcode 4.5.
+À noter que pour peu que vous ayez déjà développé sur Mac, il y a de grandes chances pour que vous ayez déjà installé la suite.
+
+
+3 - ZSH
+-------
+
+
+```
+$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+```
+
+Pas encore réussi à installer correctement les fonts pour [Powerline](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme), ça attendra
+
+
+4 - HomeBrew
+------------
+
+Installation de `brew`:
+
+```
+$ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+```
+
+Les outils installés:
+
+```
+    brew install ack
+
+```
 
