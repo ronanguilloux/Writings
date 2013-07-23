@@ -115,3 +115,8 @@ Les outils installés:
 `the_silver_searcher`se veut encore mieux que ack, je ne l'ai découvert qu'après coup, [il est documenté ici](https://github.com/ggreer/the_silver_searcher), "a code-searching tool similar to ack, but faster".
 
 Je n'ai pas installé git via brew (version 1.8.3) puisque la 1.8.1 a été installé avec l'appli mac de Github (cf. plus haut).
+
+5 - OpenSource fonts
+-------------------------
+
+J'ai échoué pour l'instant à installer Powerline (peut importe en fait) par contre ça m'a fait découvrir [Powerline-Fonts](https://github.com/Lokaltog/powerline-fonts), un symathique dépot de fonts libres adaptées à l'édition de code.
