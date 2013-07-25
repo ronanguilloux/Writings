@@ -98,7 +98,8 @@ On verra plus loin qu'en sautant cette étape on se retrouve avec des warnings d
 3 - ZSH
 -------
 Zsh, c'est le shell des gens qui utilisent tout le temps leur shell. Il est installé par défaut dans Mac. On le tweak ici avec l'excellent [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), que j'ai longtemps utilisé sous Ubuntu:
-```
+
+``` bash
 $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 ```
 Pas encore réussi à installer correctement les fonts pour [Powerline](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme), ça attendra
@@ -109,13 +110,13 @@ Pas encore réussi à installer correctement les fonts pour [Powerline](https://
 
 Installation de `brew`:
 
-```
+``` bash
 $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 ```
 
 Les outils installés:
 
-```
+``` bash
 brew install the_silver_searcher wget tree tig
 ```
 
@@ -129,7 +130,25 @@ L'autocomplétion de `brew` dans `zsh`est vraiment utile, [l'installation](https
 5 - Vagrant
 -----------
 
-On rentre dans le sérieux :  installer quelque chose de mieux que MAMP, et même mieux qu'un simple LAMP local sous Linux, pour trouver à la place un moyen de monter rapidement **plusieurs** machines virtuelles, une par environnement de production (une par projet, si chaque projet correspond à un serveur dédié différent). LE but est d'avoir, sur chaque projet en local, une configuration exactement similaire à l'environnement de production de ce projet. Le même OS dans la même version, la même version d'Apache, de PHP, de MySLQ, les mêmes librairires, etc.
+Vagrant, c'est ça :
+
+``` bash
+$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+$ vagrant init lucid32
+$ vagrant up
+```
+
+Puis un simple 
+
+``` bash
+$ vagrant ssh
+...
+vagrant@vagrantup:~$
+```
+
+On rentre dans le coeur du problème  : l'environnement de développement sous MAC.
+
+Le but est ici d'installer quelque chose de mieux que [MAMP](http://fr.wikipedia.org/wiki/MAMP), et même mieux qu'un simple [LAMP](http://fr.wikipedia.org/wiki/LAMP) local sous GNU/Linux, pour trouver à la place un moyen de monter rapidement **plusieurs** machines virtuelles, une par environnement de production (une par projet, si chaque projet correspond à un serveur dédié différent). LE but est d'avoir, sur chaque projet en local, une configuration exactement similaire à l'environnement de production de ce projet. Le même OS dans la même version, la même version d'Apache, de PHP, de MySLQ, les mêmes librairires, etc.
 
 Dis comme ça ça semble bien compliqué, mais il y a des outils de virtualisation qui font ça les doigts dans le nez.
 
