@@ -116,7 +116,7 @@ $ ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 Les outils installés:
 
 ```
-    brew install the_silver_searcher wget tree tig
+brew install the_silver_searcher wget tree tig
 ```
 
 `the_silver_searcher`se veut encore mieux que ack, je ne l'ai découvert qu'après coup, [il est documenté ici](https://github.com/ggreer/the_silver_searcher), "a code-searching tool similar to ack, but faster".
@@ -131,7 +131,7 @@ L'autocomplétion de `brew` dans `zsh`est vraiment utile, [l'installation](https
 
 On rentre dans le sérieux :  installer quelque chose de mieux que MAMP, et même mieux qu'un simple LAMP local sous Linux, pour trouver à la place un moyen de monter rapidement **plusieurs** machines virtuelles, une par environnement de production (une par projet, si chaque projet correspond à un serveur dédié différent). LE but est d'avoir, sur chaque projet en local, une configuration exactement similaire à l'environnement de production de ce projet. Le même OS dans la même version, la même version d'Apache, de PHP, de MySLQ, les mêmes librairires, etc.
 
-Dis come ça ça semble bien compliqué, mais il y a des outils de virtualisation qui font ça les doigts dans le nez.
+Dis comme ça ça semble bien compliqué, mais il y a des outils de virtualisation qui font ça les doigts dans le nez.
 
 C'est notamment ce que fait [Vagrant](http://www.vagrantup.com/) et c'est simplement bluffant.
 On trouvera [une liste de boxes (machines virtuelles) pour Vagrant ici](http://www.vagrantbox.es/) : ArchLinux, Debian, Ubuntu de toutes versions, et même Windows Server, tout y est ou presque.
