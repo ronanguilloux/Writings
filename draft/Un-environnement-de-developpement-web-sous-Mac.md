@@ -79,6 +79,7 @@ Assez vite on tombe sur des sites d'applications expliquant qu'il faut allez sur
 
 Bref que des petits logiciels pas essentiel pour la prod, en fait.
 
+
 2 - Command Line Tools for Xcode
 --------------------------------
 
@@ -92,6 +93,7 @@ Je cite http://pym.me/posts/installer-et-configurer-un-environnement-de-developp
 J'ai donc suivi les consignes : Installer Xcode (via l'Appstore, près d'un Giga o_O), aller dans Préférences > Téléchargements, installer les Command Line Tools (118,5 Mo).
 
 On verra plus loin qu'en sautant cette étape on se retrouve avec des warnings dans les installations avec `brew` (cf. le point 4), donc autant ne pas faire l'impasse.
+
 
 3 - ZSH
 -------
@@ -127,12 +129,25 @@ L'autocomplétion de `brew` dans `zsh`est vraiment utile, [l'installation](https
 5 - Vagrant
 -----------
 
-On rentre dans le sérieux :  installer quelque chose de mieux que MAMP, et même mieux qu'un simple LAMP local, et trouver à la place un moyen de monter simplement et rapidement des machines virtuelles ayant une configuration exactement similaire aux différents environnements de production "réels".
+On rentre dans le sérieux :  installer quelque chose de mieux que MAMP, et même mieux qu'un simple LAMP local sous Linux, pour trouver à la place un moyen de monter rapidement **plusieurs** machines virtuelles, une par environnement de production (une par projet, si chaque projet correspond à un serveur dédié différent). LE but est d'avoir, sur chaque projet en local, une configuration exactement similaire à l'environnement de production de ce projet. Le même OS dans la même version, la même version d'Apache, de PHP, de MySLQ, les mêmes librairires, etc.
 
-C'est ce que fait [Vagrant](http://www.vagrantup.com/) et c'est simplement bluffant.
-On trouvera [une liste de boxes pour vagrant ici](http://www.vagrantbox.es/) : ArchLinux, Debian, Ubuntu de toutes versions, et même Windows Server.
+Dis come ça ça semble bien compliqué, mais il y a des outils de virtualisation qui font ça les doigts dans le nez.
 
-En trois lignes de shell c'est monté, et c'est très très bon.
+C'est notamment ce que fait [Vagrant](http://www.vagrantup.com/) et c'est simplement bluffant.
+On trouvera [une liste de boxes (machines virtuelles) pour Vagrant ici](http://www.vagrantbox.es/) : ArchLinux, Debian, Ubuntu de toutes versions, et même Windows Server, tout y est ou presque.
+
+C'est vraiment simple : En trois lignes de shell c'est monté. Un petit fichier bootstrap.sh permet d'installer et de configurer ce dont on a besoin. Un répertoire /vagrant à la racine du serveur virtuel est partagé avec l'hote (l'OS de MAC), c'est donc là qu'on peut éditer son code source. On peut donc travailler directement depuis Mac, sans avoir à "rentrer" dans la machien virtuelle en permanence.
+
+**My beloved GUI EDI Vs my PHP Quality Assurance Toolchain**
+
+C'est à la fois un gros gain et un problème, quand on fait le choix systématique d'un [environnement de développement intégré](http://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement_int%C3%A9gr%C3%A9) (comprenez : un éditeur de code source) avec une jolie [interface graphique](http://fr.wikipedia.org/wiki/Interface_graphique), par exemple SublimeText3. Pourquoi ? Parce que ce type d'IDE graphique, qui donc n'est pas directement sur l'OS virtualisé va habituellement gagner à utiliser des plugins tiers utilisant eux-mêmes des extensions de PHP ou des librairies écrites en PHP : [phpmd, phpcs, php-cs-fixer, etc.](http://phpqatools.org/) pour améliorer l'expérience d'écriture du code. A cause de notre IDE préféré tout beau et tout clicable, il faudra donc installer - par exemple via pear - sur l'OS hôte (MAC) et non sur le serveur virtualisé.
+
+Donc en fait on se retrouve à maintenir une version de PHP sur Mac et une autre dans la box vagrant. Grrrrrrr.
+
+L'alernative reste simple, mais radicale : ouvrir avec `vagrant ssh` une sesssion SSH vers la machine virtuelle, et de tout faire sous Vim sur cette machine. Moi ça me dérangerai pas, mais ça peut devenir bloquant s'il faut proposer cette solution à toute l'équipe de production qui veut se mettre à Vagrant :-/
+
+J'en suis là, je vous raconterai à la longue si c'est point bloquant
+
 
 X - Annexes
 -----------
