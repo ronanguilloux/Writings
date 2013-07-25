@@ -25,7 +25,7 @@ De temps en temps, pour des raisons un peu obscures, il me vient de lancer un Su
 
 C'est cet environnement de travail que je vais maintenant essayer de retrouver sous Mac, et c'est à cette question que répond cet article ci-dessous, en détail.
 
-La deuxième question à laquelle répond cet article est ("Is OS X for WEB developers ?")[http://zachholman.com/2011/03/osx-isnt-for-developers/]
+La deuxième question à laquelle répond cet article est : ["Is OS X for WEB developers?"](http://zachholman.com/2011/03/osx-isnt-for-developers)
 
 Préambule 1 : Un OS, c'est une opinion
 --------------------------------------
