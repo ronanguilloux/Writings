@@ -163,7 +163,7 @@ C'est à la fois un gros gain et un problème, quand on fait le choix systémati
 
 Donc en fait on se retrouve à maintenir une version de PHP sur Mac et une autre dans la box vagrant. Grrrrrrr.
 
-L'alernative reste simple, mais radicale : ouvrir avec `vagrant ssh` une sesssion SSH vers la machine virtuelle, et de tout faire sous Vim sur cette machine. Moi ça me dérangerai pas, mais ça peut devenir bloquant s'il faut proposer cette solution à toute l'équipe de production qui veut se mettre à Vagrant :-/
+L'alernative est simple mais radicale : ouvrir avec `vagrant ssh` une sesssion SSH sur la machine virtuelle, et tout faire sous Vim sur cette machine. Bref, dans mon cas, travailler exactement comme sur une machine hôte GNU/Linux. Moi ça me dérangerai pas, mais ça peut devenir bloquant s'il faut proposer cette solution à toute l'équipe de production qui veut justement se mettre à Vagrant :-/
 
 J'en suis là, je vous raconterai à la longue si c'est point bloquant
 
