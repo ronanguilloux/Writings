@@ -127,8 +127,8 @@ Je n'ai pas installé git via brew (version 1.8.3) puisque la 1.8.1 a été inst
 L'autocomplétion de `brew` dans `zsh`est vraiment utile, [l'installation](https://github.com/mxcl/homebrew/wiki/Tips-N%27-Tricks#zsh) est documentée ici 
 
 
-5 - Vagrant
------------
+5 - Vagrant : Mise en place
+---------------------------
 
 Vagrant, c'est ça :
 
@@ -138,7 +138,7 @@ $ vagrant init lucid32
 $ vagrant up
 ```
 
-Puis un simple 
+Plus un simple accès SSH pour rentrer dans la machine virtualisée 
 
 ``` bash
 $ vagrant ssh
@@ -146,13 +146,15 @@ $ vagrant ssh
 vagrant@vagrantup:~$
 ```
 
-On rentre dans le coeur du problème  : l'environnement de développement sous MAC.
+Ce paragraphe décrit comme nous allons résoudre la plus grande partie notre problème  : l'environnement de développement \*AMP sous MAC.
 
-Le but est ici d'installer quelque chose de mieux que [MAMP](http://fr.wikipedia.org/wiki/MAMP), et même mieux qu'un simple [LAMP](http://fr.wikipedia.org/wiki/LAMP) local sous GNU/Linux, pour trouver à la place un moyen de monter rapidement **plusieurs** machines virtuelles, une par environnement de production (une par projet, si chaque projet correspond à un serveur dédié différent). LE but est d'avoir, sur chaque projet en local, une configuration exactement similaire à l'environnement de production de ce projet. Le même OS dans la même version, la même version d'Apache, de PHP, de MySLQ, les mêmes librairires, etc.
+Le but est ici d'installer quelque chose de mieux que [MAMP](http://fr.wikipedia.org/wiki/MAMP), et même mieux qu'un simple [LAMP](http://fr.wikipedia.org/wiki/LAMP) local sous GNU/Linux, pour trouver à la place un moyen de monter rapidement **plusieurs** machines virtuelles, une par environnement de production (une par projet, si chaque projet correspond à un serveur dédié différent). eE but est d'avoir, sur chaque projet en local, une configuration exactement similaire à l'environnement de production de ce projet. Le même OS dans la même version, la même version d'Apache, de PH, la même version du moteur de base de données, les mêmes librairires, etc.
 
 Dis comme ça ça semble bien compliqué, mais il y a des outils de virtualisation qui font ça les doigts dans le nez.
 
 C'est notamment ce que fait [Vagrant](http://www.vagrantup.com/) et c'est simplement bluffant.
+
+
 On trouvera [une liste de boxes (machines virtuelles) pour Vagrant ici](http://www.vagrantbox.es/) : ArchLinux, Debian, Ubuntu de toutes versions, et même Windows Server, tout y est ou presque.
 
 C'est vraiment simple : En trois lignes de shell c'est monté. Un petit fichier bootstrap.sh permet d'installer et de configurer ce dont on a besoin. Un répertoire /vagrant à la racine du serveur virtuel est partagé avec l'hote (l'OS de MAC), c'est donc là qu'on peut éditer son code source. On peut donc travailler directement depuis Mac, sans avoir à "rentrer" dans la machien virtuelle en permanence.
@@ -163,7 +165,7 @@ C'est à la fois un gros gain et un problème, quand on fait le choix systémati
 
 Donc en fait on se retrouve à maintenir une version de PHP sur Mac et une autre dans la box vagrant. Grrrrrrr.
 
-L'alernative est simple mais radicale : ouvrir avec `vagrant ssh` une sesssion SSH sur la machine virtuelle, et tout faire sous Vim sur cette machine. Bref, dans mon cas, travailler exactement comme sur une machine hôte GNU/Linux. Moi ça me dérangerai pas, mais ça peut devenir bloquant s'il faut proposer cette solution à toute l'équipe de production qui veut justement se mettre à Vagrant :-/
+L'alernative est simple mais radicale : ouvrir avec `vagrant ssh` une session SSH sur la machine virtuelle, et tout faire sous Vim sur cette machine. Bref, dans mon cas, travailler exactement comme sur une machine hôte GNU/Linux. Moi ça me dérangerai pas, mais ça peut devenir bloquant s'il faut proposer cette solution à toute l'équipe de production qui veut justement se mettre à Vagrant :-/
 
 J'en suis là, je vous raconterai à la longue si c'est point bloquant
 
