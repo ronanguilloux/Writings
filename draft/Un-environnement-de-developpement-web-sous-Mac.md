@@ -67,7 +67,7 @@ Les **.dmg** téléchargés sur les sites des différents éditeurs de logiciels
 * Vagrant
 * Spotify
 * 
-Pour iTerm2, je recommande cet article : (Working Effectively With iTerm2)[http://goo.gl/Ipb4Wn].
+Pour iTerm2, je recommande cet article : [Working Effectively With iTerm2](http://goo.gl/Ipb4Wn).
 Pour les utilisateur de clavier mac déporté, afin de rpofiter du pavé numérique, 
 il faut sélectionner "xterm with numeric keypad" dans les configurations de clavier (preset) dans prefs->profiles->keys
 
