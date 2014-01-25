@@ -68,7 +68,7 @@ Les **.dmg** téléchargés sur les sites des différents éditeurs de logiciels
 * Spotify
 * 
 Pour iTerm2, je recommande cet article : [Working Effectively With iTerm2](http://goo.gl/Ipb4Wn).
-Pour les utilisateur de clavier mac déporté, afin de rpofiter du pavé numérique, 
+Pour les utilisateur de clavier mac déporté, afin de profiter du pavé numérique, 
 il faut sélectionner "xterm with numeric keypad" dans les configurations de clavier (preset) dans prefs->profiles->keys
 
 Assez vite on tombe sur des sites d'applications expliquant qu'il faut allez sur l'Appstore pour télécharger l'appli désirée. L'Appstore ouvert dans Mac OS X se révèle très proche dans son fonctionnement de la logithèque d'Ubuntu ou du Google Play d'Android : on y trouve "Les apps les + téléchargées", "Par thématiques", "Les gratuits", etc. OK, fastoche donc.
